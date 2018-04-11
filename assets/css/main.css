@@ -1314,8 +1314,8 @@
 /* Basic */
 
 	body {
-
-		background-image: url("images/banner.svg"), url("../../images/bg.jpg");
+        background-color: #1d0419;
+        background-image: url("images/banner.svg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1503,7 +1503,7 @@
             filter: grayscale(100%);
             position: relative;
             z-index: 1;
-            transition: all .2s ease-in-out;
+            transition: transform .5s ease-in-out, filter 1s ease-in-out;
 
          }
 
@@ -2303,8 +2303,8 @@
 		/* Basic */
 
 			body {
-
-				background-image: url("images/banner.svg"), url("../../images/bg-alt.jpg");
+                background-color: #1d0419;
+				background-image: url("images/banner.svg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
