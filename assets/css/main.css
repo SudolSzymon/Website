@@ -1316,11 +1316,11 @@
 	body {
         background-color: #1d0419;
         background-image: url("images/banner.svg");
-		background-repeat: repeat, no-repeat;
+		background-repeat: no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
-		background-attachment: fixed, fixed;
-		font-family: 'Source Sans Pro', sans-serif;
+		background-attachment: fixed;
+        font-family: 'Open Sans', sans-serif;
 		font-size: 18pt;
 		line-height: 1.75em;
 		font-weight: 300;
@@ -1328,7 +1328,8 @@
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
-        will-change: transform;
+        transform: translateZ(0);
+
 	}
 
 		body.is-scroll {
@@ -1339,11 +1340,9 @@
 		body.is-loading * {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
-			-ms-transition: none !important;
 			transition: none !important;
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
-			-ms-animation: none !important;
 			animation: none !important;
 		}
 
@@ -1955,10 +1954,8 @@
 
 /* Icons */
 
-	.icon {
-		text-decoration: none;
-	}
-		.icon:before {
+
+		.icon {
 			display: inline-block;
             font-family: FontAwesome;
 			font-size: 1.25em;
@@ -1974,6 +1971,9 @@
 		.icon > .label {
 			display: none;
 		}
+        .icon:hover{
+            color: #942a93;
+        }
 
 /* Header */
 
@@ -2118,9 +2118,9 @@
 		}
 
 			#footer a:hover {
-				color: #c72bc1;
-				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
-				border-bottom-color: rgba(53, 184, 143, 0.5);
+				color: #942a93;
+				text-shadow: 0 0 0.5px rgba(148, 42, 147, 0.25);
+				border-bottom-color: rgba(74, 0, 74, 0.5);
 			}
 
 		#footer .icons {
@@ -2304,13 +2304,14 @@
 
 			body {
                 background-color: #1d0419;
-				background-image: url("images/banner.svg");
-				background-repeat: repeat, no-repeat;
+                background-image: url("images/banner.svg");
+				background-repeat: no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
-				background-attachment: scroll, scroll;
+				background-attachment: fixed;
+                font-family: 'Open Sans', sans-serif;
 				font-size: 14pt;
-                will-change: transform;
+                transform: translateZ(0);
 			}
 
 			input, textarea, select {
