@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a053d1c-e221-4735-930d-8f13ae578400" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/banner.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,10 +19,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="290" column="31" selection-start-line="290" selection-start-column="31" selection-end-line="290" selection-end-column="31" />
+            <state relative-caret-position="1241">
+              <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
               <folding>
-                <element signature="e#11839#11845#0" expanded="true" />
+                <element signature="e#5291#5297#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,22 +31,21 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="2089" column="4" selection-start-line="2089" selection-start-column="4" selection-end-line="2089" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="1322" column="44" lean-forward="true" selection-start-line="1317" selection-start-column="8" selection-end-line="1322" selection-end-column="44" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banner.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/images/banner.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>conta</find>
-      <find>image.fi</find>
-      <find>article</find>
-      <find>inner</find>
-      <find>subm</find>
-      <find>oncli</find>
       <find>'a'</find>
       <find>.row</find>
       <find>in</find>
@@ -73,7 +69,13 @@
       <find>c72bc1</find>
       <find>nar</find>
       <find>Basi</find>
+      <find>ba</find>
+      <find>article</find>
+      <find>bac</find>
       <find>basic</find>
+      <find>arr</find>
+      <find>back</find>
+      <find>.back</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,6 +127,13 @@
               <item name="Website" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Website" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Website" type="b2602c69:ProjectViewProjectNode" />
@@ -189,7 +198,7 @@
       <workItem from="1523431236720" duration="15922000" />
       <workItem from="1523452103135" duration="301000" />
       <workItem from="1523453090479" duration="5115000" />
-      <workItem from="1523462543639" duration="6797000" />
+      <workItem from="1523462543639" duration="11704000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1523436419155</created>
@@ -247,11 +256,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523467553498</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changes">
+      <created>1523472094898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1523472094898</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50911000" />
+    <option name="totallyTimeSpent" value="55818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -259,6 +275,7 @@
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2247191" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50033045" side_tool="true" weight="0.32884097" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49834764" weight="0.17385444" />
@@ -306,7 +323,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="design change" />
-    <option name="LAST_COMMIT_MESSAGE" value="design change" />
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,7 +337,7 @@
         <state relative-caret-position="1445">
           <caret line="85" column="18" lean-forward="true" selection-start-line="85" selection-start-column="18" selection-end-line="85" selection-end-column="18" />
           <folding>
-            <element signature="e#11839#11845#0" expanded="true" />
+            <element signature="e#5291#5297#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -442,18 +460,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="290" column="31" selection-start-line="290" selection-start-column="31" selection-end-line="290" selection-end-column="31" />
+        <state relative-caret-position="1241">
+          <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
           <folding>
-            <element signature="e#11839#11845#0" expanded="true" />
+            <element signature="e#5291#5297#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/images/banner.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2089" column="4" selection-start-line="2089" selection-start-column="4" selection-end-line="2089" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="1322" column="44" lean-forward="true" selection-start-line="1317" selection-start-column="8" selection-end-line="1322" selection-end-column="44" />
         </state>
       </provider>
     </entry>
