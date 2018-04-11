@@ -1314,11 +1314,12 @@
 /* Basic */
 
 	body {
+        
         background-color: #1d0419;
         background-image: url("images/banner.svg");
 		background-repeat: no-repeat;
 		background-size: auto, cover;
-		background-position: top left, center 0;
+		background-position:  center ;
 		background-attachment: fixed;
         font-family: 'Open Sans', sans-serif;
 		font-size: 18pt;
@@ -1327,7 +1328,6 @@
 		letter-spacing: 1px;
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-		-webkit-text-stroke: 0.25px;
         transform: translateZ(0);
 
 	}
@@ -2141,7 +2141,6 @@
 	.poptrox-popup {
 		-moz-box-sizing: content-box;
 		-webkit-box-sizing: content-box;
-		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		background: #fff;
 		padding-bottom: 3em;
@@ -2174,7 +2173,6 @@
 		.poptrox-popup .nav-previous {
 			-moz-transition: opacity 0.5s ease-in-out;
 			-webkit-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
 			transition: opacity 0.5s ease-in-out;
 			position: absolute;
 			top: 0;
@@ -2226,13 +2224,12 @@
 				transform: scaleX(-1);
 				left: 0;
 				-ms-filter: "FlipH";
-				filter: FlipH;
+				filter: flipH();
 			}
 
 		.poptrox-popup .closer {
 			-moz-transition: opacity 0.5s ease-in-out;
 			-webkit-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
 			transition: opacity 0.5s ease-in-out;
 			position: absolute;
 			top: 0;
@@ -2248,7 +2245,6 @@
 			.poptrox-popup .closer:before {
 				-moz-transition: background-color 0.5s ease-in-out;
 				-webkit-transition: background-color 0.5s ease-in-out;
-				-ms-transition: background-color 0.5s ease-in-out;
 				transition: background-color 0.5s ease-in-out;
 				content: '';
 				display: block;
@@ -2306,8 +2302,8 @@
                 background-color: #1d0419;
                 background-image: url("images/banner.svg");
 				background-repeat: no-repeat;
-				background-size: auto, 100% auto;
-				background-position: top left, top center;
+				background-size:  cover;
+				background-position: top center;
 				background-attachment: fixed;
                 font-family: 'Open Sans', sans-serif;
 				font-size: 14pt;
@@ -2583,5 +2579,6 @@
 			.poptrox-popup .closer {
 				opacity: 0.5;
 			}
+
 
 	}
