@@ -1533,10 +1533,17 @@
 				width: auto;
 
             }
-/* contact details*/
+/* Personal details*/
         .detail{
             text-align: left;
             font-size: large;
+        }
+        .iconimage{
+        width: 5%;
+          height: auto;
+        }
+        .iconimage img:hover{
+         color: #942a93;
         }
 /*first word*/
         .firstWord{
