@@ -1314,8 +1314,8 @@
 /* Basic */
 
 	body {
-		background-color: #183026;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+
+		background-image: url("images/banner.svg"), url("../../images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
 		background-position: top left, center 0;
@@ -1469,6 +1469,7 @@
 	.image {
 		display: inline-block;
 		border: 0;
+
 	}
 
 		.image img {
@@ -1499,7 +1500,10 @@
             display: table;
             padding-bottom: 20px;
             padding-top: 20px;
-
+            filter: grayscale(100%);
+            position: relative;
+            z-index: 1;
+            transition: all .2s ease-in-out;
          }
 
             .image.link img {
@@ -1513,6 +1517,15 @@
 
 
 
+
+            }
+            .image.link:hover
+            {
+                transform: scale(2, 2);
+                filter: none;
+                position: relative;
+                z-index: 2;
+
             }
 
 
@@ -1524,7 +1537,18 @@
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
-			}
+                filter: grayscale(100%);
+
+            }
+/* contact details*/
+        .detail{
+            text-align: left;
+            font-size: large;
+        }
+/*first word*/
+        .firstWord{
+            font-weight: bold;
+        }
 
 /* List */
 
@@ -1725,7 +1749,7 @@
 		position: relative;
 		display: inline-block;
 		border: 0;
-		background: #35b88f;
+		background: #7F267E;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		cursor: pointer;
@@ -1934,17 +1958,17 @@
 	.icon {
 		text-decoration: none;
 	}
-
 		.icon:before {
 			display: inline-block;
-			font-family: FontAwesome;
+            font-family: FontAwesome;
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
 			font-weight: normal;
 			line-height: 1;
+            color: black;
 			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
+			-moz-osx-font-smoothing: grayscale  ;
 		}
 
 		.icon > .label {
@@ -2029,15 +2053,15 @@
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b88f url("images/banner.svg") bottom center no-repeat;
+		background: #000000 url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
 	}
 
 		#banner .button {
-			color: #35b882;
-			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
+			color: #ca00c5;
+			text-shadow: 0 0 0.5px #7F267E;
 		}
 
 		#banner header {
@@ -2094,7 +2118,7 @@
 		}
 
 			#footer a:hover {
-				color: #35b88f;
+				color: #c72bc1;
 				text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
 				border-bottom-color: rgba(53, 184, 143, 0.5);
 			}
@@ -2279,8 +2303,8 @@
 		/* Basic */
 
 			body {
-				background-color: #203936;
-				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
+
+				background-image: url("images/banner.svg"), url("../../images/bg-alt.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
 				background-position: top left, top center;
