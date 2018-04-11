@@ -1328,6 +1328,7 @@
 		color: #3a3939;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
+        will-change: transform;
 	}
 
 		body.is-scroll {
@@ -2309,6 +2310,7 @@
 				background-position: top left, top center;
 				background-attachment: scroll, scroll;
 				font-size: 14pt;
+                will-change: transform;
 			}
 
 			input, textarea, select {
