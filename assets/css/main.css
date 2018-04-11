@@ -1497,13 +1497,14 @@
 
             height: 20vw;
             width: 20vw;
-            display: table;
+            display: inline-block;
             padding-bottom: 20px;
             padding-top: 20px;
             filter: grayscale(100%);
             position: relative;
             z-index: 1;
             transition: all .2s ease-in-out;
+
          }
 
             .image.link img {
@@ -1512,9 +1513,8 @@
                 margin: auto;
                 max-height: 100%;
                 max-width: 100%;
-                display: table-cell;
                 object-fit:contain;
-
+				display: inline-block;
 
 
 
