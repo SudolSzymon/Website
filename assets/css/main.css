@@ -1319,7 +1319,7 @@
         background-image: url("images/banner.svg");
         background-repeat: no-repeat;
         background-size: auto, cover;
-        position: static;
+        background-position: top center;
         background-attachment: fixed, fixed;
         font-family: 'Open Sans', sans-serif;
         font-size: 18pt;
