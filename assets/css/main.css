@@ -1503,7 +1503,8 @@
          }
 
             .image.link img {
-
+				height: 100%;
+				width: auto;
                 margin: auto;
                 max-height: 100%;
                 max-width: 100%;
