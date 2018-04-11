@@ -1537,7 +1537,6 @@
 			.image.centered img {
 				margin: 0 auto;
 				width: auto;
-                filter: grayscale(100%);
 
             }
 /* contact details*/
