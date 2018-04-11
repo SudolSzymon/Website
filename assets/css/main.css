@@ -1314,28 +1314,22 @@
 /* Basic */
 
 	body {
-        
+
         background-color: #1d0419;
         background-image: url("images/banner.svg");
-		background-repeat: no-repeat;
-		background-size: auto, cover;
-		background-position:  center ;
-		background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        position: static;
+        background-attachment: fixed, fixed;
         font-family: 'Open Sans', sans-serif;
-		font-size: 18pt;
-		line-height: 1.75em;
-		font-weight: 300;
-		letter-spacing: 1px;
-		color: #3a3939;
-		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-        transform: translateZ(0);
+        font-size: 18pt;
+        line-height: 1.75em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #3a3939;
+        text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    }
 
-	}
-
-		body.is-scroll {
-			background-attachment: scroll, scroll;
-			background-size: auto, 100% auto;
-		}
 
 		body.is-loading * {
 			-moz-transition: none !important;
