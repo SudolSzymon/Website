@@ -1315,7 +1315,7 @@
 
 	body {
 
-        background-color: #1d0419;
+        background-color: #2a0426;
         background-image: url("images/banner.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -1519,17 +1519,14 @@
             }
         /* Gallery */
         ul.images {
-            padding: 10vw;
+            list-style: none outside none;
             margin: 0;
-
-            white-space: normal;
-            width: auto;
-            overflow-x: auto;
-            opacity: 100%;
+            padding: 0;
         }
         ul.images li {
 
             display: inline;
+         
 
 
 }
@@ -2018,7 +2015,7 @@
 		/* Basic */
 
 			body {
-                background-color: #4a004a;
+                background-color: #2a0426;
                 background-image: url("images/banner.svg");
 				background-repeat: no-repeat;
 				background-size:  cover;
