@@ -1488,8 +1488,8 @@
             height: 20vw;
             width:  20vw;
             display: inline-block;
-            padding-bottom: 20px;
-            padding-top: 20px;
+            padding-bottom: 2%;
+            padding-top: 2%;
             filter: grayscale(100%);
             position: relative;
             z-index: 1;
@@ -2087,8 +2087,8 @@
             height: 30vw;
             width:  30vw;
             display: inline-block;
-            padding-bottom: 20px;
-            padding-top: 20px;
+            padding-bottom: 2%;
+            padding-top: 2%;
             filter: grayscale(100%);
             position: relative;
             z-index: 1;
