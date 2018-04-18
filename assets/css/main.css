@@ -1526,6 +1526,7 @@
         ul.images li {
 
             display: inline;
+            width: 33%;
         }
 
 
