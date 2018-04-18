@@ -1484,9 +1484,9 @@
 
 		}
         .image.link {
-
+            overflow: hidden;
             height: 20vw;
-            width: 20vw;
+            width:  20vw;
             display: inline-block;
             padding-bottom: 20px;
             padding-top: 20px;
@@ -1504,7 +1504,7 @@
                 max-height: 100%;
                 max-width: 100%;
                 object-fit:contain;
-				display: inline-block;
+				display: inline;
 
 
 
@@ -1517,6 +1517,22 @@
                 z-index: 2;
 
             }
+        /* Gallery */
+        ul.images {
+            padding: 10vw;
+            margin: 0;
+
+            white-space: normal;
+            width: auto;
+            overflow-x: auto;
+            opacity: 100%;
+        }
+        ul.images li {
+
+            display: inline;
+
+
+}
 
 
 		.image.centered {
@@ -1546,151 +1562,6 @@
             font-weight: bold;
         }
 
-/* List */
-
-	ul.default {
-		list-style: disc;
-		padding-left: 1em;
-	}
-
-		ul.default li {
-			padding-left: 1.5em;
-			margin-top: 1.5em;
-		}
-
-			ul.default li:first-child {
-				margin-top: 0;
-			}
-
-	ul.icons {
-		cursor: default;
-	}
-
-		ul.icons li {
-			display: inline-block;
-		}
-
-		ul.icons a {
-			display: inline-block;
-			width: 2.5em;
-			height: 2.5em;
-			line-height: 2.5em;
-			text-align: center;
-			border: 0;
-		}
-
-	ul.menu {
-		cursor: default;
-	}
-
-		ul.menu li {
-			display: inline-block;
-			line-height: 1em;
-			border-left: solid 1px #dad9d9;
-			padding: 0 0 0 0.5em;
-			margin: 0 0 0 0.5em;
-		}
-
-			ul.menu li:first-child {
-				border-left: 0;
-				padding-left: 0;
-				margin-left: 0;
-			}
-
-	ul.actions {
-		cursor: default;
-	}
-
-		ul.actions li {
-			display: inline-block;
-			margin: 0 0 0 0.5em;
-		}
-
-			ul.actions li:first-child {
-				margin-left: 0;
-			}
-
-	ol.default {
-		list-style: decimal;
-		padding-left: 1.25em;
-	}
-
-		ol.default li {
-			padding-left: 1.25em;
-			margin-top: 1.5em;
-		}
-
-/* Form */
-
-	form label {
-		display: block;
-		margin: 0 0 0.5em 0;
-	}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select,
-	form textarea {
-		-moz-transition: background-color 0.35s ease-in-out;
-		-webkit-transition: background-color 0.35s ease-in-out;
-		-ms-transition: background-color 0.35s ease-in-out;
-		transition: background-color 0.35s ease-in-out;
-		-webkit-appearance: none;
-		display: block;
-		border: 0;
-		background: #f1f1f1;
-		width: 100%;
-		padding: 0.75em;
-	}
-
-		form input[type="text"]:focus,
-		form input[type="email"]:focus,
-		form input[type="password"]:focus,
-		form select:focus,
-		form textarea:focus {
-			background: #f8f8f8;
-		}
-
-	form input[type="text"],
-	form input[type="email"],
-	form input[type="password"],
-	form select {
-		line-height: 1em;
-	}
-
-	form textarea {
-		min-height: 12em;
-	}
-
-	form .formerize-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form ::-webkit-input-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form :-moz-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form ::-moz-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form :-ms-input-placeholder {
-		color: #5a5959 !important;
-	}
-
-	form ::-moz-focus-inner {
-		border: 0;
-	}
-
-	form ul.actions {
-		margin-bottom: 0;
-		text-align: center;
-	}
 
 /* Table */
 
@@ -2216,6 +2087,20 @@
 				#banner br {
 					display: none;
 				}
+        .image.link {
+            overflow: hidden;
+            height: 30vw;
+            width:  30vw;
+            display: inline-block;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            filter: grayscale(100%);
+            position: relative;
+            z-index: 1;
+            transition: transform .5s ease-in-out, filter 1s ease-in-out;
+
+        }
+
 
 	}
 
@@ -2246,39 +2131,6 @@
 
 		/* List */
 
-			ul.default li {
-				padding-left: 0.5em;
-			}
-
-			ul.icons a {
-				width: 2em;
-				height: 2em;
-				line-height: 2em;
-			}
-
-			ul.menu li {
-				display: block;
-				padding: 0;
-				border: 0;
-				margin: 1em 0 0 0;
-			}
-
-				ul.menu li:first-child {
-					margin-top: 0;
-				}
-
-			ul.actions li {
-				display: block;
-				margin: 1em 0 0 0;
-			}
-
-				ul.actions li:first-child {
-					margin-top: 0;
-				}
-
-			ol.default li {
-				padding-left: 0.25em;
-			}
 
 		/* Button */
 
@@ -2401,21 +2253,7 @@
 				margin: 0 0 4em 0;
 			}
 
-		/* Poptrox */
 
-			.poptrox-popup .nav-next,
-			.poptrox-popup .nav-previous {
-				opacity: 1.0;
-			}
-
-				.poptrox-popup .nav-next:before,
-				.poptrox-popup .nav-previous:before {
-					display: none;
-				}
-
-			.poptrox-popup .closer {
-				opacity: 0.5;
-			}
 
 
 	}
