@@ -3,9 +3,9 @@
 
         $(document).ready(function(){
             $("img").click(function(){
-                var img = $("img.image.centered");
-                img.hide(1000);
-                img.show(1000)
+                const img = $("img.image.centered");
+                img.hide(2000,"swing");
+                img.show(2000,"swing");
                 });
         });
 	/**
