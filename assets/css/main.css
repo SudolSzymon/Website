@@ -1893,7 +1893,7 @@
 
 /* Banner */
 
-	#banner {
+	.banner {
 		position: relative;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
@@ -1904,37 +1904,38 @@
 		background-size: 125% auto;
 	}
 
-		#banner .button {
+		.banner .button {
 			color: #ca00c5;
 			text-shadow: 0 0 0.5px #7F267E;
 		}
 
-		#banner header {
+		.banner header {
 			margin: 0 0 2em 0;
 		}
+        
 
-			#banner header h2 {
+			.banner header h2 {
 				font-weight: 400;
 				font-size: 1.75em;
 				letter-spacing: 8px;
 			}
 
-		#banner p {
+		.banner p {
 			margin: 0;
 		}
 
-		#banner footer {
+		.banner footer {
 			margin: 2em 0 0 0;
 		}
-
-		#banner a {
+		.banner a {
 			color: inherit;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
-			#banner a:hover {
+			.banner a:hover {
 				border-bottom-color: rgba(255, 255, 255, 0);
 			}
+
 
 /* Footer */
 
