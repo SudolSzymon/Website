@@ -24,6 +24,25 @@
 
 	body {
 		line-height: 1;
+		
+	}
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+	
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: transparent; 
+	}
+	
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background:#942a922f; 
+	}
+	
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background:#942a92; 
 	}
 
 	ol, ul {
@@ -44,10 +63,7 @@
 		border-spacing: 0;
 	}
 
-	body {
-		-webkit-text-size-adjust: none;
-	}
-
+	
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1498,8 +1514,6 @@
          }
 
             .image.link img {
-				height: 100%;
-				width: auto;
                 margin: auto;
                 max-height: 100%;
                 max-width: 100%;
@@ -1526,7 +1540,6 @@
         ul.images li {
 
             display: inline;
-            width: 33%;
         }
 
 
@@ -1539,7 +1552,17 @@
 				margin: 0 auto;
 				width: auto;
 
-            }
+			}
+	 /* Gallery */
+        ul.images {
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+        }
+        ul.images li {
+
+            display: inline;
+        }
 /* Personal details*/
         .detail{
             text-align: left;
@@ -1556,7 +1579,20 @@
         .firstWord{
             font-weight: bold;
         }
-
+/*Work experience log*/
+p.work::first-line{
+	font-size: 0.5em;
+}
+p.work{
+	font-size: 1em;
+}
+ul.workList{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+}
 
 /* Table */
 
@@ -1596,6 +1632,7 @@
 				background: #f5f5f5;
 			}
 
+
 /* Button */
 
 	input[type="button"],
@@ -1607,7 +1644,7 @@
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 		transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
-		-webkit-appearance: none;
+
 		position: relative;
 		display: inline-block;
 		border: 0;
@@ -1912,7 +1949,7 @@
 		.banner header {
 			margin: 0 0 2em 0;
 		}
-        
+
 
 			.banner header h2 {
 				font-weight: 400;
