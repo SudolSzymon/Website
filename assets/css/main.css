@@ -2146,15 +2146,15 @@ ul.workList{
 	position: absolute;
 	bottom: -4.5em;
 	left: 50%;
-	height: 4.5em;
+	height: 0em;
 	border-left: solid 1px #fff;
 }
 
 .arrows:before {
 	content: '';
 	display: block;
-	width: 2.5em;
-	height: 2.5em;
+	width: 0;
+	height: 0em;
 	position: absolute;
 	bottom: -3.7em;
 	left: 58%;
