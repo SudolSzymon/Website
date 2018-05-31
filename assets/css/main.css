@@ -1455,9 +1455,7 @@
 
 /* Sections/Article */
 
-	section, article {
-		margin-bottom: 3em;
-	}
+	
 
 	section > :last-child,
 	article > :last-child,
@@ -1589,7 +1587,7 @@ p.work{
 ul.workList{
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height: 300px;
+	height: 30vh;
 	margin: 0;
 	padding: 0;
 }
@@ -1706,40 +1704,36 @@ ul.workList{
 				background: rgba(58, 57, 57, 0.025);
 			}
 
+/*Arrows between*/
+.arrows:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -9em;
+	left: 50%;
+	height: 9em;
+	border-left: solid 1px #fff;
+}
+
+.arrows:before {
+	content: '';
+	display: block;
+	width: 90px;
+	height: 66px;
+	position: absolute;
+	left: 50%;
+	bottom: -6em;
+	margin-left: -45px;
+	margin-top: -33px;
+	background: url("images/arrow.svg") no-repeat;
+}
+
 /* Box */
 
 	.box {
 		position: relative;
-		margin-top: 9em;
-		margin-bottom: 0;
+		margin-bottom: 9em;
 	}
-
-		.box:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: -9em;
-			left: 50%;
-			height: 9em;
-			border-left: solid 1px #fff;
-		}
-
-		.box:before {
-			content: '';
-			display: block;
-			width: 90px;
-			height: 66px;
-			position: absolute;
-			left: 50%;
-			top: -4.5em;
-			margin-left: -45px;
-			margin-top: -33px;
-			background: url("images/arrow.svg") no-repeat;
-		}
-
-		.box :last-child {
-			margin-bottom: 0;
-		}
 
 		.box.style1 {
 			background: #fff;
@@ -1813,15 +1807,7 @@ ul.workList{
 				padding: 40px 0 0px 0;
 			}
 
-				.box.style2 .inner:after {
-					content: '';
-					display: block;
-					position: absolute;
-					top: 0;
-					left: 50%;
-					height: 100%;
-					border-left: solid 1px #fff;
-				}
+				
 
 
 
@@ -1905,28 +1891,7 @@ ul.workList{
 			width: 100%;
 		}
 
-			#header footer:after {
-				content: '';
-				display: block;
-				position: absolute;
-				bottom: -9em;
-				left: 50%;
-				height: 9em;
-				border-left: solid 1px #fff;
-			}
-
-			#header footer:before {
-				content: '';
-				display: block;
-				width: 90px;
-				height: 66px;
-				position: absolute;
-				left: 50%;
-				bottom: -4.5em;
-				margin-left: -45px;
-				margin-bottom: -33px;
-				background: url("images/arrow.svg") no-repeat;
-			}
+			
 
 /* Banner */
 
@@ -1938,6 +1903,7 @@ ul.workList{
 		background: #000000 url("images/banner.svg") bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
+		margin-bottom: 9em;	
 		background-size: 125% auto;
 	}
 
@@ -2079,12 +2045,10 @@ ul.workList{
 
 			.box {
 				position: relative;
+				margin-bottom: 9em;
 			}
 
-				.box section {
-					margin: 0 0 2em 0;
-				}
-
+				
 				.box.style1 {
 					padding: 2.5em 2em 2.5em 2em;
 				}
@@ -2175,26 +2139,34 @@ ul.workList{
 				max-width: 320px;
 			}
 
+			/*Arrows between*/
+.arrows:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -4.5em;
+	left: 50%;
+	height: 4.5em;
+	border-left: solid 1px #fff;
+}
+
+.arrows:before {
+	content: '';
+	display: block;
+	width: 2.5em;
+	height: 2.5em;
+	position: absolute;
+	bottom: -3.7em;
+	left: 58%;
+	background: url("images/arrow.svg") no-repeat ;
+	background-size: 100%;
+	background-position: center;
+}
 		/* Box */
 
-			.box {
-				margin-top: 4.5em;
+			.box{
+				margin-bottom: 4.5em
 			}
-
-				.box:after {
-					top: -4.5em;
-					height: 4.5em;
-				}
-
-				.box:before {
-					width: 45px;
-					height: 33px;
-					top: -2.25em;
-					margin-left: -22.5px;
-					margin-top: -16.5px;
-					background-size: 45px 33px;
-				}
-
 				.box.style1 {
 					padding: 0;
 					text-align: center;
@@ -2226,12 +2198,12 @@ ul.workList{
 		/* Header */
 
 			#header {
-				padding: 6em 0 6em 0;
+				padding:0;
+				margin-bottom: 4.5em
 			}
 
 				#header header {
-					padding-left: 2em;
-					padding-right: 2em;
+					padding:2em;
 				}
 
 					#header header h1 {
@@ -2240,37 +2212,24 @@ ul.workList{
 					}
 
 				#header footer {
-					bottom: 4.5em;
+					position: absolute;
+					bottom: 0;
 					padding: 0 2em 0 2em;
 				}
 
-					#header footer:after {
-						bottom: -4.5em;
-						left: 50%;
-						height: 4.5em;
-					}
-
-					#header footer:before {
-						width: 45px;
-						height: 33px;
-						bottom: -2.25em;
-						margin-left: -22.5px;
-						margin-bottom: -16.5px;
-						background-size: 45px 33px;
-					}
-
 		/* Banner */
 
-			#banner {
-				padding: 3em 2em 3em 2em;
+			.banner {
+				padding: 3em 2em  2em;
 				background-size: auto 150%;
+				margin-bottom: 4.5em;
 			}
 
-				#banner header {
+				.banner header {
 					margin: 0 0 1em 0;
 				}
 
-					#banner header h2 {
+					.banner header h2 {
 						font-size: 1.5em;
 						letter-spacing: 6px;
 					}

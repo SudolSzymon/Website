@@ -66,37 +66,6 @@
 				offset: function() { return (skel.breakpoint('mobile').active ? 70 : 190); }
 			});
 
-		// Full screen header.
-			if (settings.fullScreenHeader) {
-
-				var $header = $('#header');
-
-				if ($header.length > 0) {
-
-					var $header_header = $header.find('header');
-
-					$window
-						.on('resize.overflow_fsh', function() {
-
-							if (skel.breakpoint('mobile').active)
-								$header.css('padding', '');
-							else {
-
-								var p = Math.max(192, ($window.height() - $header_header.outerHeight()) / 2);
-								$header.css('padding', p + 'px 0 ' + p + 'px 0');
-
-							}
-
-						})
-						.trigger('resize.overflow_fsh');
-
-					$window.load(function() {
-						$window.trigger('resize.overflow_fsh');
-					});
-
-				}
-
-			}
 
 	});
 
