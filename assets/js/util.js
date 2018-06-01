@@ -4,9 +4,19 @@
         $(document).ready(function(){
             $(".arrows").click(
 				function(){
-					$('html, body').animate({
-						scrollTop: $(this).next().offset().top
-					}, 1000);
+					var elOffset = $(this).next().offset().top;
+ 					var elHeight = $(this).next().height();
+ 					var windowHeight = $(window).height();
+  					var offset;
+
+  				if (elHeight < windowHeight) {
+    			offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+  				}
+  				else {
+					offset = elOffset;
+				  }
+  				offset=offset+90;
+				  $('html, body').animate({scrollTop:offset}, 1000);
 				}
 			);
         });
