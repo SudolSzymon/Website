@@ -2,11 +2,13 @@
 
 
         $(document).ready(function(){
-            $("img").click(function(){
-                const img = $("img.image.centered");
-                img.hide(2000,"swing");
-                img.show(2000,"swing");
-                });
+            $(".arrows").click(
+				function(){
+					$('html, body').animate({
+						scrollTop: $(this).next().offset().top
+					}, 1000);
+				}
+			);
         });
 	/**
 	 * Panel-ify an element.

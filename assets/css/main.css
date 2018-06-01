@@ -1705,15 +1705,7 @@ ul.workList{
 			}
 
 /*Arrows between*/
-.arrows:after {
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: -9em;
-	left: 50%;
-	height: 9em;
-	border-left: solid 1px #fff;
-}
+
 
 .arrows:before {
 	content: '';
@@ -1726,6 +1718,7 @@ ul.workList{
 	margin-left: -45px;
 	margin-top: -33px;
 	background: url("images/arrow.svg") no-repeat;
+	
 }
 
 /* Box */
@@ -1851,7 +1844,8 @@ ul.workList{
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 0;
-		padding: 14em 0 14em 0;
+		padding-bottom: 4em;
+		margin: 14em 0 8em 0;
 		cursor: default;
 	}
 
@@ -1886,7 +1880,7 @@ ul.workList{
 
 		#header footer {
 			position: absolute;
-			bottom: 9em;
+			bottom: 3em;
 			margin: 0;
 			width: 100%;
 		}
@@ -1950,15 +1944,7 @@ ul.workList{
 		margin: 4.5em 0 0 0;
 	}
 
-		#footer:after {
-			content: '';
-			display: block;
-			position: absolute;
-			top: -4.5em;
-			left: 50%;
-			height: 4.5em;
-			border-left: solid 1px #fff;
-		}
+		
 
 		#footer a {
 			color: #fff;
@@ -2140,15 +2126,6 @@ ul.workList{
 			}
 
 			/*Arrows between*/
-.arrows:after {
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: -4.5em;
-	left: 50%;
-	height: 0em;
-	border-left: solid 1px #fff;
-}
 
 .arrows:before {
 	content: '';
@@ -2198,7 +2175,7 @@ ul.workList{
 		/* Header */
 
 			#header {
-				padding:10em 0 10 em 0;
+				margin:10em 0 10em 0;
 				margin-bottom: 4.5em
 			}
 
