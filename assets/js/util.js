@@ -1,25 +1,7 @@
 (function($) {
 
 
-        $(document).ready(function(){
-            $(".arrows").click(
-				function(){
-					var elOffset = $(this).next().offset().top;
- 					var elHeight = $(this).next().height();
- 					var windowHeight = $(window).height();
-  					var offset;
-
-  				if (elHeight < windowHeight) {
-    			offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
-  				}
-  				else {
-					offset = elOffset;
-				  }
-  				offset=offset+90;
-				  $('html, body').animate({scrollTop:offset}, 1000);
-				}
-			);
-        });
+      
 	/**
 	 * Panel-ify an element.
 	 * @param {object} userConfig User config.
@@ -28,7 +10,7 @@
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
-			if (this.length == 0)
+			if (this.length === 0)
 				return $this;
 
 		// Multiple elements?
