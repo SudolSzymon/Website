@@ -1531,8 +1531,8 @@
             }
         /* Gallery */
         ul.images {
-            list-style: none outside none;
-            margin: 0;
+			list-style: none outside none;
+			margin: 0;
             padding: 0;
         }
         ul.images li {
@@ -1551,16 +1551,7 @@
 				width: auto;
 
 			}
-	 /* Gallery */
-        ul.images {
-            list-style: none outside none;
-            margin: 0;
-            padding: 0;
-        }
-        ul.images li {
 
-            display: inline;
-        }
 /* Personal details*/
         .detail{
             text-align: left;
